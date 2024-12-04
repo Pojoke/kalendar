@@ -45,8 +45,13 @@ echo "</tr>";
 // echo "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td>";
 echo "<tr>";
 for ($i = 1; $i <= count($daysOfWeek); $i++) {
-    $day = date("j", mktime(0, 0, 0, date("m"), ($firstDayOfWeek + 4)+$i, date("Y")));
-    echo "<td>$day</td>";
+    $day = date("j", mktime(0, 0, 0, date("m"), $daysOfWeekN +$i , date("Y")));
+   
+   
+        echo "<td>$day</td>";
+    
+   
+
 }
 echo "</tr>";
 
