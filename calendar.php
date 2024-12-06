@@ -39,13 +39,13 @@ for ($i = 1; $i <= count($daysOfWeek); $i++) {
         echo "<td class='red'>{$daysOfWeek[6]}</td>";
     } else {
         echo "<td class='blue'>{$daysOfWeek[$i]}</td>";
-    }
+    } 
 }
 echo "</tr>";
 // echo "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td>";
 echo "<tr>";
 for ($i = 1; $i <= count($daysOfWeek); $i++) {
-    $day = date("j", mktime(0, 0, 0, date("m"), $daysOfWeekN +$i , date("Y")));
+    $day = date("j", mktime(0, 0, 0, date("m"), $firstDayOfWeek+$i  , date("Y")));
    
    
         echo "<td>$day</td>";
