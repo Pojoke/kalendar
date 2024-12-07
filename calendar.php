@@ -44,8 +44,8 @@ for ($i = 1; $i <= count($daysOfWeek); $i++) {
 echo "</tr>";
 // echo "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td>";
 echo "<tr>";
-for ($i = 1; $i <= count($daysOfWeek); $i++) {
-    $day = date("j", mktime(0, 0, 0, date("m"), $firstDayOfWeek+$i  , date("Y")));
+for ($i = 0; $i < count($daysOfWeek); $i++) {
+    $day = date("j", mktime(0, 0, 0, date("m"),date("j",$firstDayOfWeek) +$i  , date("Y")));
    
    
         echo "<td>$day</td>";
